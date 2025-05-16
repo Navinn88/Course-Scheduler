@@ -63,7 +63,7 @@ Input validation and exception dialogs to guide users.
     - `MainFrame.java` – Application entry point and Swing UI controller
     - `MainFrame.form` – NetBeans‑generated form definitions for the GUI
 
-Technologies & Libraries
+# Technologies & Libraries
 
 Java SE 8+: Core language features and collections.
 

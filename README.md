@@ -46,22 +46,22 @@ File I/O for import/export of configuration or logs.
 Robust Error Handling:
 
 Input validation and exception dialogs to guide users.
-src/
-├── model/
-│   ├── ClassDescription.java   # Holds course code, description, seat count
-│   ├── ClassEntry.java         # Section data: semester, course code, seats
-│   ├── CourseEntry.java        # Course metadata: code and description
-│   └── ScheduleEntry.java      # Enrollment record: timestamp, student, class, status
-├── dao/
-│   ├── ClassQueries.java       # SQL for class-related CRUD
-│   ├── CourseQueries.java      # SQL for course-related CRUD
-│   └── MultiTableQueries.java  # Joins across tables for reporting
-│   └── StudentQueries.java     # SQL for student CRUD and retrieval
-├── util/
-│   └── DBConnection.java       # Singleton JDBC connection manager
-└── ui/
-    ├── MainFrame.java          # Entry point & Swing UI logic
-    └── MainFrame.form          # NetBeans GUI form definitions
+- **src/**
+  - **model/**
+    - `ClassDescription.java` – Holds course code, description, and seat count
+    - `ClassEntry.java` – Section details: semester, course code, and seat availability
+    - `CourseEntry.java` – Course metadata: code and description
+    - `ScheduleEntry.java` – Enrollment record: timestamp, student ID, class section, and status
+  - **dao/**
+    - `ClassQueries.java` – CRUD operations for class sections
+    - `CourseQueries.java` – CRUD operations for course definitions
+    - `MultiTableQueries.java` – Multi‑table joins for reporting and views
+    - `StudentQueries.java` – CRUD operations and retrieval for student data
+  - **util/**
+    - `DBConnection.java` – Singleton JDBC connection manager
+  - **ui/**
+    - `MainFrame.java` – Application entry point and Swing UI controller
+    - `MainFrame.form` – NetBeans‑generated form definitions for the GUI
 
 Technologies & Libraries
 

@@ -96,7 +96,7 @@ Command Line:
 javac -d out src/**/*java
 java -cp out ui.MainFrame
 
-Skills & Techniques Learned
+# Skills & Techniques Learned
 
 Object-Oriented Design: Designed clear data models and encapsulated behavior.
 
